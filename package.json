@@ -1,17 +1,22 @@
 {
-  "name": "talo-server",
-  "module": "index.ts",
-  "type": "module",
-  "scripts": {
-    "start": "bun run src/index.ts"
-  },
-  "dependencies": {
-    "hono": "^4.2.7"
-  },
-  "devDependencies": {
-    "@types/bun": "^1.1.0"
-  },
-  "peerDependencies": {
-    "typescript": "^5.0.0"
-  }
+	"name": "talo-server",
+	"module": "server.ts",
+	"type": "module",
+	"scripts": {
+		"start": "bun run src/server.ts",
+		"dev": "bun --watch run src/server.ts",
+		"clean": "bunx @biomejs/biome check --apply *"
+	},
+	"dependencies": {
+		"cohere-ai": "^7.9.5",
+		"hono": "^4.2.7"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "1.7.1",
+		"@types/bun": "^1.1.0"
+	},
+	"peerDependencies": {
+		"typescript": "^5.0.0"
+	},
+	"trustedDependencies": ["@biomejs/biome"]
 }
