@@ -1,0 +1,34 @@
+[
+	{
+		"role": "USER",
+		"message": "Hola, mi nombre es Jone Doe"
+	},
+	{
+		"role": "CHATBOT",
+		"message": "Hi, my name is Jone Doe"
+	},
+	{
+		"role": "USER",
+		"message": "I love soccer and programming"
+	},
+	{
+		"role": "CHATBOT",
+		"message": "Me encanta el fútbol y la programación"
+	},
+	{
+		"role": "USER",
+		"message": "Quiero viajar a Inglaterra"
+	},
+	{
+		"role": "CHATBOT",
+		"message": "I want to travel to England"
+	},
+	{
+		"role": "USER",
+		"message": "I should've loved you better"
+	},
+	{
+		"role": "CHATBOT",
+		"message": "Debería haberte amado mejor"
+	}
+]
