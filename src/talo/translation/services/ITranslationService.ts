@@ -1,3 +1,3 @@
 export default interface ITranslationService {
-	translate(message: string): Promise<void>;
+	translate(message: string): Promise<string>;
 }

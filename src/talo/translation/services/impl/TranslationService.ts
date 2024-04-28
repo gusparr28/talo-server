@@ -9,7 +9,8 @@ export default class TranslationService implements ITranslationService {
 		this.cohereClient = new CohereClientImpl();
 	}
 
-	public async translate(message: string): Promise<void> {
-		await this.cohereClient.processMessageTranslation(message);
+	public async translate(message: string): Promise<string> {
+		const translatedMessage = await this.cohereClient.processMessageTranslation(message);
+		return translatedMessage;
 	}
 }
