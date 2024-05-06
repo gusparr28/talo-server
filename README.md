@@ -1,2 +1,2 @@
 # talo-server
-Translator web server made with Bun, Hono, TypeScript and Cohere API
+Translator web server made with Bun, Hono, TypeScript and the Cohere API
