@@ -1,8 +1,10 @@
 import app from "./app";
 
-const port = Bun.env.PORT;
+const port = Bun.env.PORT || 3001;
 
-export default {
+const server = Bun.serve({
 	port,
 	fetch: app.fetch,
-};
+});
+
+console.log("server running on port:", server.port);

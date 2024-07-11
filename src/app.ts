@@ -1,12 +1,14 @@
 import { Hono } from "hono";
 import { logger } from "hono/logger";
 
-import translationRoutes from "./api/routes/translation.routes";
+import translateRoutes from "./infrastructure/api/routes/translate.route";
 
-const app = new Hono().basePath("/api");
+const apiVersion = Bun.env.API_VERSION;
+
+const app = new Hono().basePath(`/api/${apiVersion}`);
 
 app.use(logger());
 
-app.route("/translate", translationRoutes);
+app.route("/translate", translateRoutes);
 
 export default app;
