@@ -1,7 +1,7 @@
 import { CohereClient as Client } from "cohere-ai";
 import type { ChatMessage } from "cohere-ai/api";
 import path from "node:path";
-import type { IAIClient } from "../../domain/interfaces/aI.client.interface";
+import type { IAIClient } from "./interfaces/aI.client.interface";
 
 export class CohereClient implements IAIClient {
 	private cohereClient: Client;

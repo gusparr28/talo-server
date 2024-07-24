@@ -1,6 +1,6 @@
-import type { IAIClient } from "../../domain/interfaces/aI.client.interface";
-import type { ITranslateService } from "../../domain/interfaces/translate.service.interface";
+import type { ITranslateService } from "./interfaces/translate.service.interface";
 import type { Translate } from "../../domain/translate.entity";
+import type { IAIClient } from "../../infrastructure/clients/interfaces/aI.client.interface";
 
 export default class TranslateService implements ITranslateService {
 	constructor(private readonly aIClient: IAIClient) {}
